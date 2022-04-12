@@ -1,10 +1,11 @@
 import './App.css';
-import Home from './pages/Home';
 import { Provider } from 'react-redux';
+import Home from './pages/Home';
+import store from './redux/ConfigureStore';
 
 function App() {
   return (
-    <Provider>
+    <Provider store={store}>
       <Home />
     </Provider>
   );

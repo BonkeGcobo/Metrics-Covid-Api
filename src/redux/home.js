@@ -24,7 +24,7 @@ export const fetchCountriesfromServer = () => async (dispatch) => {
 function homeReducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_COUNTRIES:
-      return [...state, action.payload];
+      return [...state, ...action.payload];
 
     default:
       return state;
