@@ -1,13 +1,17 @@
 import './App.css';
-import { Provider } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import store from './redux/ConfigureStore';
+import Details from './pages/Details';
 
 function App() {
   return (
-    <Provider store={store}>
-      <Home />
-    </Provider>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<Details />} />
+      </Routes>
+
+    </>
   );
 }
 
