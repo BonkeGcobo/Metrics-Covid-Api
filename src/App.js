@@ -1,12 +1,12 @@
 import './App.css';
+import Home from './pages/Home';
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        nvojebvouwbvcouev
-      </header>
-    </div>
+    <Provider>
+      <Home />
+    </Provider>
   );
 }
 
