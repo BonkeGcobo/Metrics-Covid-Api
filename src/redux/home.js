@@ -14,7 +14,11 @@ const fetchCountries = (payload) => ({
 
 export const fetchCountriesfromServer = () => async (dispatch) => {
   const response = await axios.get(`${baseUrl}/countries`);
-  console.log(response);
+  const countryArray = [];
+  for (let i = 0; i < 6; i += 1) {
+    countryArray.push(response.data.countries[i]);
+  }
+  dispatch(fetchCountries(countryArray));
 };
 
 function homeReducer(state = initialState, action) {
