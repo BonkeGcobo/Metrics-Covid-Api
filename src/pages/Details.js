@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 // import { fetchCountryFromServer } from '../redux/home';
 
 function Details(props) {
-  const { countryRegion } = props;
-  console.log(countryRegion);
- // const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // dispatch(fetchCountryFromServer(countryRegion));
   return (
     <div>
