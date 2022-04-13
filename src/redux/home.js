@@ -29,13 +29,16 @@ export const fetchCountriesfromServer = () => async (dispatch) => {
 
 export const fetchCountryFromServer = (countryRegion) => async (dispatch) => {
   const response = await axios.get(`${baseUrl}/countries/${countryRegion}/confirmed`);
-  console.log(response);
+  dispatch(fetchCountryRegion(response.data));
 };
 
 function homeReducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_COUNTRIES:
       return [...state, ...action.payload];
+
+    case FETCH_COUNTRY_REGION:
+      return [...state, ...action.payload]
 
     default:
       return state;
