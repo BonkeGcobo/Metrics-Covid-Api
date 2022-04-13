@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { fetchCountriesfromServer} from '../redux/home';
+import { fetchCountriesfromServer } from '../redux/home';
 import { fetchCountryFromServer } from '../redux/details';
 import CountryData from './CountryData';
 

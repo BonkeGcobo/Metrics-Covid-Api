@@ -6,25 +6,23 @@ const initialState = [];
 const FETCH_COUNTRY_REGION = 'FETCH_COUNTRY_REGION';
 
 const fetchCountryRegion = (payload) => ({
-    type: FETCH_COUNTRY_REGION,
-    payload,
+  type: FETCH_COUNTRY_REGION,
+  payload,
 });
 
-
-
 export const fetchCountryFromServer = (countryRegion) => async (dispatch) => {
-    const response = await axios.get(`${baseUrl}/countries/${countryRegion}/confirmed`);
-    dispatch(fetchCountryRegion(response.data));
+  const response = await axios.get(`${baseUrl}/countries/${countryRegion}/confirmed`);
+  dispatch(fetchCountryRegion(response.data));
 };
 
-detailsReducer = (state = initialState, action) => {
-    switch (action.type){
-      case FETCH_COUNTRY_REGION:
-        return [...state, ...action.payload];
-      
-      default:
-          return state;
-    }
-    
+const detailsReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_COUNTRY_REGION:
+      return [...action.payload];
 
-}
+    default:
+      return state;
+  }
+};
+
+export default detailsReducer;

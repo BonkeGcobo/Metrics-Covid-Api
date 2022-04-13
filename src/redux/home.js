@@ -37,9 +37,6 @@ function homeReducer(state = initialState, action) {
     case FETCH_COUNTRIES:
       return [...state, ...action.payload];
 
-    case FETCH_COUNTRY_REGION:
-      return [...state, ...action.payload]
-
     default:
       return state;
   }

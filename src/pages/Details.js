@@ -1,20 +1,38 @@
 import React from 'react';
-//import { useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
-// import { fetchCountryFromServer } from '../redux/home';
+import { useSelector } from 'react-redux';
 
-function Details(props) {
-  // const dispatch = useDispatch();
-  // dispatch(fetchCountryFromServer(countryRegion));
+function Details() {
+  const countryRegionStats = useSelector((state) => state.details);
   return (
-    <div>
-      <h1>//</h1>
-    </div>
+    <ul>
+      {countryRegionStats.map((provice) => {
+        const {
+          uid, combinedKey, confirmed, deaths, active,
+        } = provice;
+
+        return (
+          <li key={uid} className="provinceDetail">
+            <h3 className="country">
+              Country
+              <span>{combinedKey}</span>
+            </h3>
+            <h3 className="confirmed">
+              Confirmed Cases
+              <span>{confirmed}</span>
+            </h3>
+            <h3 className="deaths">
+              Deaths
+              <span>{deaths}</span>
+            </h3>
+            <h3 className="active">
+              Active Cases
+              <span>{active}</span>
+            </h3>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
 export default Details;
-
-Details.propTypes = {
-  countryRegion: PropTypes.string.isRequired,
-};
