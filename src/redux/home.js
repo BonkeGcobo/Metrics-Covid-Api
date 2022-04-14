@@ -7,7 +7,7 @@ const initialState = [];
 const FETCH_COUNTRIES = 'FETCH_COUNTRIES';
 
 // Fetch country action creator
-const fetchCountries = (payload) => ({
+export const fetchCountries = (payload) => ({
   type: FETCH_COUNTRIES,
   payload,
 });
