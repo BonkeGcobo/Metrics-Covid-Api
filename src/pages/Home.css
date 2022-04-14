@@ -1,7 +1,33 @@
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
 .eachCountry {
   list-style: none;
 }
 
-.info {
-  text-decoration: none;
+.global-icon {
+  height: 80px;
+}
+
+.homePage {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #FD5294;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.title {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: large;
+}
+
+body {
+  margin: 0px;
+} 
+
+.region-filter {
+  color: #fff;
+  margin-top: -1rem;
+  padding: 0.5rem;
+  background-color: #DF4783;
 }
