@@ -1,19 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Covid Metrics App
 
-> Description the project.
+> Used the covid Api, to show the cases of Covid in each countries
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Javascript
+- React
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://covid-metrics-tracker.netlify.app)
 
 
 ## Getting Started
@@ -25,32 +24,27 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
+- You need nodejs installed in your machine
+- You need internet connection
 
 ### Install
-
-### Usage
+- npm install (install node modules)
 
 ### Run tests
+- npm test
 
 ### Deployment
 
-
+[Live Demo Link](https://covid-metrics-tracker.netlify.app)
 
 ## Authors
 
-👤 **Author1**
+👤 **Bonke Gcobo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/BonkeGcobo)
+- Twitter: [@twitterhandle](https://twitter.com/bonkegcobo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bonkegcobo/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -70,4 +64,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [creative-commons](https://creativecommons.org/licenses/by-nc/4.0/) licensed
