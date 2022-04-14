@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/gill-sans');
+
 .eachCountry {
   list-style: none;
 }
@@ -11,7 +12,7 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  background-color: #FD5294;
+  background-color: #fd5294;
   color: #fff;
   padding: 1.5rem;
 }
@@ -22,12 +23,12 @@
 }
 
 body {
-  margin: 0px;
-} 
+  margin: 0;
+}
 
 .region-filter {
   color: #fff;
   margin-top: -1rem;
   padding: 0.5rem;
-  background-color: #DF4783;
+  background-color: #df4783;
 }

@@ -1,5 +1,5 @@
 .countryRegion {
-  background-color: #FD5294;
+  background-color: #fd5294;
   color: #fff;
   padding: 1.5rem;
 }
@@ -13,11 +13,11 @@ body {
 }
 
 #province0 {
-  background-color: #FD5294;
+  background-color: #fd5294;
 }
 
 #province1 {
-  background-color: #E94A88;
+  background-color: #e94a88;
 }
 
 ul {
@@ -30,7 +30,7 @@ ul {
   color: #fff;
   margin-top: -1rem;
   padding: 0.5rem;
-  background-color: #DF4783;
+  background-color: #df4783;
 }
 
 .provinceDetail {
@@ -41,7 +41,8 @@ ul {
 }
 
 .confirmed,
-.deaths, .active {
+.deaths,
+.active {
   display: flex;
   align-items: center;
   gap: 1rem;
