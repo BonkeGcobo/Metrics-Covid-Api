@@ -5,7 +5,7 @@ const initialState = [];
 
 const FETCH_COUNTRY_REGION = 'FETCH_COUNTRY_REGION';
 
-const fetchCountryRegion = (payload) => ({
+export const fetchCountryRegion = (payload) => ({
   type: FETCH_COUNTRY_REGION,
   payload,
 });

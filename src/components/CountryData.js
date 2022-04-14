@@ -6,7 +6,7 @@ function CountryData(props) {
 
   return (
     <>
-      <h4 className="countName">{countryRegion}</h4>
+      <h3 className="countName">{countryRegion}</h3>
       <h5 className="countCode">
         Confirmed Cases
         {' '}

@@ -15,7 +15,7 @@ export const fetchCountries = (payload) => ({
 export const fetchCountriesfromServer = () => async (dispatch) => {
   const response = await axios.get(`${baseUrl}/confirmed`);
   const countryArray = [];
-  for (let i = 0; i < 6; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     countryArray.push(response.data[i]);
   }
   dispatch(fetchCountries(countryArray));

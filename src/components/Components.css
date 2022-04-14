@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Roboto:wght@100&display=swap');
+.filter-by-country {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -1.35rem;
+}
+
+#info {
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'lato', sans-serif;
+  border: 1px solid #fff;
+}
+
+ul {
+  padding: 0px;
+}
+
+.info0 {
+  background-color: #D8437E;
+}
+
+.info1 {
+  background-color: #FD5294;
+}
+
+.countName,
+.countCode {
+  font-weight: lighter;
+}

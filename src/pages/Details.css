@@ -1,0 +1,48 @@
+.countryRegion {
+  background-color: #FD5294;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.title {
+  font-family: 'Gill Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#province0 {
+  background-color: #FD5294;
+}
+
+#province1 {
+  background-color: #E94A88;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-filter {
+  color: #fff;
+  margin-top: -1rem;
+  padding: 0.5rem;
+  background-color: #DF4783;
+}
+
+.provinceDetail {
+  margin-top: -1.35rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  padding: 1rem;
+}
+
+.confirmed,
+.deaths, .active {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
