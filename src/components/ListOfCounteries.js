@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { fetchCountriesfromServer } from '../redux/home';
 import { fetchCountryFromServer } from '../redux/details';
 import CountryData from './CountryData';
+import './Components.css';
 
 const ListOfCountries = () => {
   const dispatch = useDispatch();
@@ -13,21 +14,23 @@ const ListOfCountries = () => {
   }, []);
 
   return (
-    <ul>
-      {countries.map((country) => {
-        const { countryRegion, iso3, confirmed } = country;
-        return (
-          <NavLink to="/details" key={iso3} className="info" onClick={() => dispatch(fetchCountryFromServer(countryRegion))}>
-            <li className="eachCountry">
-              <CountryData
-                countryRegion={countryRegion}
-                confirmed={confirmed}
-              />
-            </li>
-          </NavLink>
-        );
-      })}
-    </ul>
+    <section className="countryRegionList">
+      <ul className="filter-by-country">
+        {countries.map((country, index) => {
+          const { countryRegion, iso3, confirmed } = country;
+          return (
+            <NavLink to="/details" key={iso3} id="info" className={`info${index % 2}`} onClick={() => dispatch(fetchCountryFromServer(countryRegion))}>
+              <li className="eachCountry">
+                <CountryData
+                  countryRegion={countryRegion}
+                  confirmed={confirmed}
+                />
+              </li>
+            </NavLink>
+          );
+        })}
+      </ul>
+    </section>
   );
 };
 
